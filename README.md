@@ -1,6 +1,2 @@
 # workspace
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/ygkim46/workspace.git
-git push -u origin master
+2017-03-12 Django Web 프로젝트 생성.
