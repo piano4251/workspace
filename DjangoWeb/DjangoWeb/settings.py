@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'elections'
 ]
 
 MIDDLEWARE = [
@@ -80,6 +81,7 @@ WSGI_APPLICATION = 'DjangoWeb.wsgi.application'
 #     }
 # }
 
+# LOCAL SEVER
 DATABASES = {
     'default': {
         'ENGINE': 'mysql.connector.django',
@@ -90,6 +92,7 @@ DATABASES = {
     }
 }
 
+DATABASE_OPTIONS = {'charset': 'utf8'}
 
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
