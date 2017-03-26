@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from django.db import models
 
 # Create your models here.
@@ -9,3 +10,15 @@ class Candidate(models.Model):
     
     def __str__(self):
         return self.name
+
+class Poll(models.Model):
+    start_date = models.DateTimeField()
+    end_date = models.DateTimeField()
+    area = models.CharField(max_length=15)
+    
+class Choice(models.Model):
+    poll = models.ForeignKey(Poll)
+    candidate = models.ForeignKey(Candidate)
+    votes = models.IntegerField(default=0)
+    
+    
