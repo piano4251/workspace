@@ -1,0 +1,27 @@
+ <!doctype html>
+<head>
+	<title>자바스크립트 실습</title>
+<head>
+<body>
+	<h1>자바스크립트 실습<h1>
+	<script>
+		//변수와 함수
+		//variable and funciton 
+		var a;
+		var b;
+		a = 10;
+		b = 15; 
+		var c = a + b;
+		console.log(c);
+		console.log(a+b);
+		console.log(10+15);
+
+		a = "오늘은";
+		b = "목요일입니다";
+		console.log(a+b);
+
+		a = 75;
+		b = "나의 몸무게는" + a + "kg 입니다.";
+		console.log(b);
+	<script>
+<body>
